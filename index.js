@@ -1,13 +1,9 @@
 'use strict'
 
-var React = require('react-native')
-var {
-  View,
-  DeviceEventEmitter,
-  Animated,
-} = React
+import React, { Component } from 'react';
+import { View, DeviceEventEmitter, Animated } from 'react-native';
 
-export default class ResponsiveKeyboardView extends React.Component {
+export default class ResponsiveKeyboardView extends Component {
   constructor(props, context) {
     super(props, context)
     this.state = {
